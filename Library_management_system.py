@@ -93,3 +93,6 @@ my_library.show_all()
 print(len(my_library))
 print(len(my_library2))
 print(my_library == my_library2)
+
+# Версія 1.0
+print("Бібліотека запущена!")
