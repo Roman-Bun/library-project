@@ -54,6 +54,13 @@ class Library:
                 return
         print(f"Цієї книги немає в нашому обліку.")
 
+    def search_book(self, title):
+        for book in self._books:
+            if title.lower() in book.title.lower():
+                print(book)
+                return
+        print(f"Книгу '{title}' не знайдено")
+
     def show_all(self):
         print("\n--- Список книг у бібліотеці ---")
         for book in self._books:
