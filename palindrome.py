@@ -19,6 +19,7 @@ def is_palindrome(s):
         right -= 1
     return True
 
-print(is_palindrome("racecar"))
-print(is_palindrome("hello"))
-print(is_palindrome("madam"))
+words = ["racecar", "hello", "madam"]
+for word in words:
+    result = "паліндром" if is_palindrome(word) else "НЕ паліндром"
+    print(f"{word} — {result}")
